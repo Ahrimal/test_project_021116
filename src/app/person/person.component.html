@@ -1,0 +1,9 @@
+<div class="col-lg-12">
+  <div class="col-lg-4">
+    <img class="person_photo img-circle" [src]="person.photo"/>
+  </div>
+  <div class="col-lg-8">
+    <h1> {{person.name}}</h1>
+    <app-stars (updateStar)="updatePerson($event)" [stars]="person.stars"></app-stars>
+  </div>
+</div>

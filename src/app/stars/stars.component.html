@@ -1,0 +1,1 @@
+<i *ngFor="let star of numberStars; let i = index" (click) = "updateStars(i+1)" [ngClass] = "star ? 'glyphicon glyphicon-star' : 'glyphicon glyphicon-star-empty'"></i>
